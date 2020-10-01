@@ -15,6 +15,12 @@ Then reload the config.
 source ~/.zshrc
 ```
 
+Create `git-dir`
+
+```zsh
+mkdir ~/.df
+```
+
 Now you can start backup your dotfiles.
 
 
