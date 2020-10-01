@@ -1,6 +1,5 @@
 # Go Cheatsheet
 
-
 ## Basics
 
 ## Methods and interfaces
