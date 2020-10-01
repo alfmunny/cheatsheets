@@ -1,6 +1,6 @@
 # Vim Cheatsheet
 
-## basics
+## Basics
 
 Save and Quit
 
@@ -46,23 +46,23 @@ Search
 ```
 /foo    search 'foo' forward in current buffer. The word will be hightlighted.
         Use n to goto the next and N to goto the previous one.
-?foo :  search 'foo' backward in current buffer. Nagivigation is the same as above
+?foo    search 'foo' backward in current buffer. Nagivigation is the same as above
 ```
 
 ## fold and unfold
 
 ```
-za :open a fold under cursor
-zA :open a fold under cursor
-zm: increase one fold level 
-zM: fold all
-zr: decrease one fold level
-zR: unfold all
-zo: open fold at cursor
-zO: open all fold at cursor
-zj: move to next fold
-zk: move to previous fold
-zi: invert 'foldenable'
+za      open a fold under cursor
+zA      open a fold under cursor
+zm      increase one fold level 
+zM      fold all
+zr      decrease one fold level
+zR      unfold all
+zo      open fold at cursor
+zO      open all fold at cursor
+zj      move to next fold
+zk      move to previous fold
+zi      invert 'foldenable'
 ```
 
 ## vimgrep in current file
@@ -80,9 +80,10 @@ vimgrep /pattern/ *
 ## quickfix
 
 ```
-open: copen
-next: cnext
-previous: cprev
+
+copen   open quickfix window
+cnext   next item
+cprev   previous item
 ```
 
 ## current date
@@ -104,26 +105,26 @@ zsh:1: command not found: data
 ```
 :cd %:h
 
-%   full path to current path
-%:h full path to current file without filename itself
+%       full path to current path
+%:h     full path to current file without filename itself
 ```
 
 ## substitute
 
 ```
-:%s/foo/bar/g   find and replace in all line
-:s/foo/bar/g    find and replace in current line
-:%s/foo/bar/gc    find and replace in current line and ask for confirmation
-:%s/foo/bar/gci    find and replace in current line, ask for confirmation, case insensative
+:%s/foo/bar/g       find and replace in all line
+:s/foo/bar/g        find and replace in current line
+:%s/foo/bar/gc      find and replace in current line and ask for confirmation
+:%s/foo/bar/gci     find and replace in current line, ask for confirmation, case insensative
 ```
 
 ## edit command line
 
 
 ```
-:<Ctrl-f> to edit the command line with vim normal mode
+:<Ctrl-f>           to edit the command line with vim normal mode
 
-q:, q/, q?, edit, search in command line
+q:, q/, q?          edit, search in command line
 
 ```
 
