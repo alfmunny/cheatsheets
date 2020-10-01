@@ -1,5 +1,54 @@
 # Vim Cheatsheet
 
+## Basics
+
+Save and Quit
+
+```
+:w      save the buffer
+:q      quit the buffer
+:wq     save and quit
+```
+
+Move around under normal mode
+
+```
+hjkl    left down up right
+Ctrl-F  Page Down
+Ctrl-B  Page Up
+w       move to next word
+e       move to the word end
+0       move to the head of line
+$       move to the end of line
+gg      jump to the top of the file
+G       jump to the bottom of the file
+```
+
+Edit
+
+```
+i       start insert mode
+<ESC>   end insert mod
+a       append 
+yy      yank the line
+yw      yank to the word end under cursor
+yiw     yank the whole word under cursor
+dd      delete and yank the line
+dw      delete to word end under cursor
+diw     delete the whole word
+p       paste yanked text
+s       substitute
+cw      change word
+```
+
+Search
+
+```
+/foo    search 'foo' forward in current buffer. The word will be hightlighted.
+        Use n to goto the next and N to goto the previous one.
+?foo :  search 'foo' backward in current buffer. Nagivigation is the same as above
+```
+
 ## fold and unfold
 
 ```
