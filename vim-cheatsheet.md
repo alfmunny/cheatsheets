@@ -1,6 +1,6 @@
 # Vim Cheatsheet
 
-## Basics
+## basics
 
 Save and Quit
 
@@ -120,26 +120,35 @@ zsh:1: command not found: data
 ## edit command line
 
 
+```
 :<Ctrl-f> to edit the command line with vim normal mode
 
 q:, q/, q?, edit, search in command line
 
+```
+
 ## autocomplete
 
+```
 ^x^n    for just this file
 ^x^f    for filenames
 ^x^]    for tags
 ^x      for anything specified by the 'complete' option
+```
 
 ## command line
 
+```
 @:      run last command
+```
 
 ## scroll
 
+```
 zt or z<CR> put current line at top of window
 zz or z.    put current line at center of window
 zb or z-    put current line at bottom of window
+```
 
 ## fiename modifiers
 
