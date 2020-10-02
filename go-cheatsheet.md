@@ -290,6 +290,58 @@ var a Abser
 a = &v
 ```
 
+Type assertion
+
+```go
+var i interface{} = "hello"
+s := i.(string)
+s, ok := i.(float64)
+```
+
+Stringers
+
+```go
+type Stringer interface {
+    String() string
+}
+func (p Persion) String() string {
+  return fmt.Sprintf("%v (%v years)", p.Name, p.Age)
+```
+
+Errors
+
+```go
+type error interface {
+}
+
+func (e *Myerror) Error() string {
+}
+```
+
+Readers
+
+```go
+package main
+
+import (
+  "fmt"
+  "io"
+  "strings"
+)
+
+func main() {
+  r := strings.NewReader("Hello, Reader!")
+  b := make([]byte, 8)
+  for {
+    n, err := r.Read(b)
+    fmt.Printf("n = %v err = %v b = %v\n", n, err, b)
+    if err == io.EOF {
+      break
+    }
+  }
+}
+```
+
 ## Concurrency
 
 Goroutines
@@ -333,4 +385,18 @@ select {
 }
 ```
 
-\`\`\`
+Mutex
+
+```go
+
+type SafeCounter struct {
+  v map[string] int
+  mux sync.Mutex
+}
+
+func (c *SafeCounter) Inc(key string) {
+  c.mux.Lock()
+  c.v[key]++
+  c.mux.Unlock
+}
+```
