@@ -92,7 +92,7 @@ cprev   previous item
 :r !date
 ```
 
-actually you can always run the shell command in VIM and insert the outputs like this
+Actually you can always run the shell command in VIM and insert the outputs like this
 
 zsh:1: command not found: data
 
@@ -118,14 +118,9 @@ zsh:1: command not found: data
 :%s/foo/bar/gci     find and replace in current line, ask for confirmation, case insensative
 ```
 
-## edit command line
-
+## command line
 
 ```
-:<Ctrl-f>           to edit the command line with vim normal mode
-
-q:, q/, q?          edit, search in command line
-
 ```
 
 ## autocomplete
@@ -140,7 +135,11 @@ q:, q/, q?          edit, search in command line
 ## command line
 
 ```
-@:      run last command
+@:         | run last command
+<Ctrl-r>"  | paste from register " to vim command line
+:<Ctrl-f>  | to edit the command line with vim normal mode
+q:, q/, q? | edit,   search in command line
+
 ```
 
 ## scroll
@@ -154,3 +153,4 @@ zb or z-    put current line at bottom of window
 ## fiename modifiers
 
 http://vimdoc.sourceforge.net/htmldoc/cmdline.html#filename-modifiers
+

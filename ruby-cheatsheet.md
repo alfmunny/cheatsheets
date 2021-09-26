@@ -14,7 +14,7 @@ puts "   word  \r\n".strip
 
 ## switch case
 
-Case uses `===`, which means subsumption. "If I have a drawer labelled a would it make sense to put b in that drawer?"
+Case uses `===`, which means subsumption. "If I have a drawer labeled a would it make sense to put b in that drawer?"
 
 ```ruby
 puts (1..5) === 3
@@ -42,7 +42,7 @@ end
 Two differences:
 
 1.  lambda checks the arguments
-2.  lambda returns the the value of the lambda, but Proc returns from the enclosure block
+2.  lambda returns the value of the lambda, but Proc returns from the enclosure block
 
 ```ruby
 l = lambda {|a, b| a**2 + b**2 }
