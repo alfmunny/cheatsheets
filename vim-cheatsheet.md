@@ -38,7 +38,10 @@ dw      delete to word end under cursor
 diw     delete the whole word
 p       paste yanked text
 s       substitute
-cw      change word
+cw      change word at cursor
+ciw     change in word
+ci(     change in ()
+cip     change in paragraph
 ```
 
 Search
@@ -80,7 +83,6 @@ vimgrep /pattern/ *
 ## quickfix
 
 ```
-
 copen   open quickfix window
 cnext   next item
 cprev   previous item
@@ -93,8 +95,6 @@ cprev   previous item
 ```
 
 Actually you can always run the shell command in VIM and insert the outputs like this
-
-zsh:1: command not found: data
 
 ```
 :r !command
@@ -117,12 +117,6 @@ zsh:1: command not found: data
 :%s/foo/bar/gc      find and replace in current line and ask for confirmation
 :%s/foo/bar/gci     find and replace in current line, ask for confirmation, case insensative
 ```
-
-## command line
-
-```
-```
-
 ## autocomplete
 
 ```
@@ -150,7 +144,7 @@ zz or z.    put current line at center of window
 zb or z-    put current line at bottom of window
 ```
 
-## fiename modifiers
+## file name modifiers
 
 http://vimdoc.sourceforge.net/htmldoc/cmdline.html#filename-modifiers
 
